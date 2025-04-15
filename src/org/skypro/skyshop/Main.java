@@ -24,6 +24,7 @@ import org.skypro.skyshop.Product;
         System.out.println("Есть ли продукт 'Продукт 2' в корзине? " + basket.hasProduct("Продукт 2"));
         System.out.println("Есть ли продукт 'Продукт 6' в корзине? " + basket.hasProduct("Продукт 6"));
 
+
         basket.clearBasket();
         basket.printBasket();
         System.out.println("Общая стоимость корзины: " + basket.getTotalPrice());
