@@ -1,8 +1,8 @@
 package org.skypro.skyshop;
 
 public class ProductBasket {
-    private Product[] products = new Product[5];
-    private int price;
+    private  Product[] products = new Product[5];
+    private  int price;
 
     public void addProduct(Product product){
         if (price < products.length){

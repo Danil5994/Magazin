@@ -5,11 +5,11 @@ import org.skypro.skyshop.Product;
 
  class App {
     public static void main(String[] args) {
-        Product product1 = new Product("Продукт 1", 100);
-        Product product2 = new Product("Продукт 2", 200);
-        Product product3 = new Product("Продукт 3", 300);
-        Product product4 = new Product("Продукт 4", 400);
-        Product product5 = new Product("Продукт 5", 500);
+         Product product1 = new Product("Продукт 1", 100);
+         Product product2 = new Product("Продукт 2", 200);
+         Product product3 = new Product("Продукт 3", 300);
+         Product product4 = new Product("Продукт 4", 400);
+         Product product5 = new Product("Продукт 5", 500);
 
         ProductBasket basket = new ProductBasket();
 
