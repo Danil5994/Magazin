@@ -5,29 +5,26 @@ import org.skypro.skyshop.Product;
 
  class App {
     public static void main(String[] args) {
-         Product product1 = new Product("Продукт 1", 100);
-         Product product2 = new Product("Продукт 2", 200);
-         Product product3 = new Product("Продукт 3", 300);
-         Product product4 = new Product("Продукт 4", 400);
-         Product product5 = new Product("Продукт 5", 500);
+        SimpleProduct product1 = new SimpleProduct("Сидр",100);
+        DiscountedProduct product2 = new DiscountedProduct(45, 10, "Хлеб");
+        FixPriceProduct product3 = new FixPriceProduct("Доширак");
 
         ProductBasket basket = new ProductBasket();
 
         basket.addProduct(product1);
         basket.addProduct(product2);
         basket.addProduct(product3);
-        basket.addProduct(product4);
-        basket.addProduct(product5);
 
-        basket.printBasket();
+
+       basket.printBasket();
         System.out.println("Общая стоимость корзины: " + basket.getTotalPrice());
-        System.out.println("Есть ли продукт 'Продукт 2' в корзине? " + basket.hasProduct("Продукт 2"));
-        System.out.println("Есть ли продукт 'Продукт 6' в корзине? " + basket.hasProduct("Продукт 6"));
+        System.out.println("Есть ли продукт " + product2 + " в корзине? " + basket.hasProduct("Хлеб"));
+        System.out.println("Есть ли продукт " + product3 + " в корзине? " + basket.hasProduct("Доширак"));
 
 
         basket.clearBasket();
         basket.printBasket();
         System.out.println("Общая стоимость корзины: " + basket.getTotalPrice());
-        System.out.println("Есть ли продукт 'Продукт 1' в корзине? " + basket.hasProduct("Продукт 1"));
+        System.out.println("Есть ли продукт " + product1 + " в корзине? " + basket.hasProduct("Сидр"));
     }
 }
